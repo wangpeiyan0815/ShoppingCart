@@ -44,6 +44,47 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/relative_delteView"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/total_check_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/tv_delete_shopcar_text02"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="#656565"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/total_check_delete"
+            android:layout_toEndOf="@+id/total_check_delete" />
+        <Button
+            android:id="@+id/btn_fragment_shopcar_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="18dp"
+            android:background="#f00"
+            android:textColor="#ffffff"
+            android:text="删除"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_jiesuan"
+        android:visibility="visible"
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         android:orientation="horizontal"
@@ -57,41 +98,6 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp" />
 
-        <TextView
-            android:id="@+id/tv_fragment_shopcar_text02"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@id/total_check_fragment_shopcar"
-            android:gravity="center_vertical"
-            android:text="全选"
-            android:textColor="#656565"
-            android:textSize="18dp"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_fragment_shopcar_text01"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="160dp"
-            android:gravity="center_vertical"
-            android:text="合计"
-            android:textColor="#999999"
-            android:textSize="14dp" />
-
-        <TextView
-            android:id="@+id/tv_fragment_shopcar_total_sum"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="118dp"
-            android:gravity="center_vertical"
-            android:text="0"
-            android:textColor="#00802d"
-            android:textSize="14dp" />
-
         <Button
             android:id="@+id/btn_fragment_shopcar_pushsum"
             android:layout_width="wrap_content"
@@ -103,5 +109,46 @@
             android:paddingTop="18dp"
             android:text="结算"
             android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_text02"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="#656565"
+            android:textSize="18dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/total_check_fragment_shopcar"
+            android:layout_toEndOf="@+id/total_check_fragment_shopcar" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_text01"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="合计"
+            android:textColor="#999999"
+            android:textSize="14dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_fragment_shopcar_text02"
+            android:layout_toEndOf="@+id/tv_fragment_shopcar_text02" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_total_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="38dp"
+            android:gravity="center_vertical"
+            android:text="￥0.0"
+            android:textColor="#00802d"
+            android:textSize="14dp"
+            android:layout_marginEnd="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_fragment_shopcar_pushsum"
+            android:layout_toStartOf="@+id/btn_fragment_shopcar_pushsum" />
     </RelativeLayout>
 </LinearLayout>
